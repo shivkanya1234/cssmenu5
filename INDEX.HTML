@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cssmenu3</title>
+</head>
+<style>
+        .s_ p0 {
+            padding: opx;
+        }
+
+    body {
+            margin: 0px;
+            background: #bdcbe5;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("img/bg.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    header {
+        height: 300px;
+        width: 100%;
+        border: 1px dashed red;
+    }
+
+        div.main {
+            width: 100%;
+            height: 4000px;
+            border: 1px dashed yellow;
+        }
+
+        footer {
+            width: 100%;
+            height: 600px;
+            border: 1px dashed green;
+        }
+
+        header>nav {
+            height: 54px;
+            width: 80%; 
+            background: #fff;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px 10px rgba[0, 0, 0, 0.1];
+            clear: both;
+    }
+
+        header h1 {
+            margin-top: 87px;
+            color: #333;
+             text-shadow: 0px 1px 1px #fff;
+            text-align: center;
+    }
+        header > nav > ul > li {
+            float: left;
+    }
+        header > nav > ul > li > a {
+            color: #a6a6a6;
+            display: block;
+            padding: 18px 25px;
+            border-right: 1px solid #d9d9d9;
+
+    }
+
+        .menu > li {
+            position: relative;
+    }
+    .menu > li:hover > a {
+            background: #fff;
+            padding-bottom: 32px;
+    }
+            li:hover >.submenu{
+                display:block;      
+    }
+        .submenu {
+            display: none;
+            width: 292px;
+            height: 335px;
+            background: #fff;
+            position: absolute;
+            top: 62px;
+            left: 0px;
+            border-radius: 10px;
+            border-top-left-radius: 0px;
+    }
+    .menu > li:nth-child(3)>a::after{
+        content: "▼";
+    }
+    
+    .active{
+        color:#2b82d9;
+    }
+    .s_left{
+        float:left;
+    }
+    .s_right{
+        float:right;
+    }
+    .s_m0{
+        margin: opx;
+
+    }
+    .submenu > li > a{
+        display:block;
+        padding: 25px;
+        border-bottom: 1px solid#d9d9d9;
+        color:#a6a6a6;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .s_fr{
+        float:right;
+    }
+    .s_posiabso{
+        position: absolute;
+    }
+    .s_t0{
+        top:0px;
+    }
+    .s_l0{
+        left:0px;
+    }
+    .s_r0{
+        right:0px;
+    }
+    .submenu2{
+        position: absolute;
+        left:265px;
+        top:36px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 30px 10px rgba[0, 0, 0, 0.1];
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <h1>Pure Css3 Mega Menu</h1>
+        <nav>
+                <ul class="s_p0 menu a_left s_m0">
+             <li>
+                <a href="#">Home</a>
+
+                </li>
+                
+                        <li>
+                            <a class="active" href="#"><i class="fas fa-star"></i> Aboutas</a>
+                            <ul class="s_p0 submenu">
+                                <li>
+                                    <a href="#"> News <i class="fad fa-chevron-down"></i></a>
+                                    <li>
+                                        <a href="#"> mission <i class="fad fa-chevron-down"></i></a>
+                                        <li>
+                                            <a href="#"> Our team <i class="fad fa-chevron-down"></i></a>
+                                            <li>
+                                                <a href="#"> Rewards <i class="fad fa-chevron-down"></i></a>
+                                                <li>
+                                                    <a href="#"> Certificates <i class="fad fa-chevron-down"></i></a>
+                            <ul class="s_p0 submenu submenu2 s_posiabso s_t0">
+                                <li>
+                            <a herf="#">Company</a>
+                        </li>
+                        <li>
+                            <a herf="#">product</a>
+                        </li>
+                        <li>
+                            <a herf="#">Special</a>
+                        </li>
+                    </ul>
+                </li>
+                            </ul>
+              </li>                     
+                <li>
+                   
+                    <a href="#"> <i class="fas fa-briefcase"></i> portfolio</a>
+
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-phone-alt"></i> Contacts</a> 
+                </li>
+            </ul>
+            <ul class="s_p0 menu s_right0  s_m0">
+                <li>
+                
+                <a href="#"><i class="fas fa-briefcase"></i> Share</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-phone-alt"></i> Pin/Unpin</a>
+            </li>
+        </nav>
+    </header>
+    <div class="main"></div>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
